@@ -1,13 +1,18 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
     --cor1: #8B2E2E;
+    --cor1dark: #551c1c;
     --cor2: #F8F1E7;
     --cor3: #6B8E23;
+    --cor3dark: #445a17;
     --cor4: #5C4033;
     --cor5: #2C2C2C;
+    --fonte1: Cinzel, serif;
+    --fonte2: Cormorant Garamond, serif;
+    --fonte3: Nunito, serif;
 }
 * {
     margin: 0px;
@@ -15,30 +20,67 @@
 }
 
 header {
-    height: 60vh;
+    width: 100%;
+    height: 10vh;
     background-color: var(--cor2);
-    background-image: url(imagens/header-medio.jpg);
+    position: fixed;
+}
+
+img.logo{
+    width: 4rem;
+    padding: 0rem 2rem;
+}
+
+nav.menu {
+    max-width: 2000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav.menu > a {
+    color: var(--cor1);
+    font-family: var(--fonte3);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1.2rem;
+}
+
+nav.menu > a:hover {
+    text-decoration: underline;
+    color: var(--cor1dark);
+}
+
+section.hero {
+    height: 70vh;
+    background-color: var(--cor2);
+    background-image: url(imagens/header-home.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
-    font-family: Cinzel, serif;
-    color: #2C2C2C;
+    font-family: var(--fonte2);
+    font-weight: normal;
+    color: var(--cor2);
     text-align: center;
-    padding: 50px;font-size: 4em;
+    padding: 9rem 3rem 3rem 3rem;
+    font-size: 4em;
+    
 }
 
-nav {
+nav.hero {
     max-width: 2000px;
     margin: auto;
-    padding: 1.5rem 10rem;
+    padding: 1rem 10rem;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.185);
 }
 
 ul {
@@ -50,14 +92,14 @@ a {
     text-decoration: none;
 }
 
-.menu {
+ul.hero {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
 .cardapio {
-    font-family: Nunito, sans-serif;
+    font-family: var(--fonte3);
     background-color: var(--cor3);
     color: var(--cor2);
     padding: 0.8rem;
@@ -65,17 +107,21 @@ a {
     font-weight: bold;
 }
 
-.cardapio:hover, .reserva:hover {
-    text-decoration: underline;
+.cardapio:hover {
+    background-color: var(--cor3dark);
 }
 
 .reserva {
-    font-family: Nunito, sans-serif;
+    font-family: var(--fonte3);
     background-color: var(--cor1);
     color: var(--cor2);
     padding: 0.8rem;
     border-radius: 0.6rem;
     font-weight: bold;
+}
+
+.reserva:hover {
+    background-color: var(--cor1dark);
 }
 
 section.sobre {
@@ -92,52 +138,51 @@ div#imagem {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 35rem;
-    height: 25rem;
-    margin: 2rem 2rem 2rem 5rem;
+    width: 45vw;
+    height: 60vh;
+    margin: 2rem 2rem 2rem 2rem;
 }
 
 div#texto {
-    width: 35rem;
-    height: 25rem;
+    width: 45vw;
+    height: 60vh;
     text-align: justify;
-    padding-top: 2.5rem;
+    padding-top: 1rem;
     vertical-align: middle;
 }
 
 h2 {
-    font-family: Josefin Sans, sans-serif;
-    font-weight: normal;
+    font-family: var(--fonte2);
     font-size: 2.3em;
     color: var(--cor1);
     padding: 1rem;
 }
 
 div.sobre > p {
-    font-family: Nunito, sans-serif;
+    font-family: var(--fonte3);
     padding: 0.5rem;
     font-size: 1.2em;
     color: var(--cor5);
+    line-height: 1em;
 }
 
-p.destaque {
-    font-family: Josefin Sans, sans-serif;
-
+div.sobre > p.destaque {
+    font-family: var(--fonte2);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
-button {
+img.ramo {
     display: block;
     margin: auto;
-    border: none;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--cor1);
-    font-family: Nunito, sans-serif;
-    color: var(--cor2);
-    font-weight: bold;
-    font-size: 1.2em;
 }
 
-button:hover {
-    text-decoration: underline;
+section.sabores {
+    background-color: var(--cor4);
+}
+
+section.sabores > h2 {
+    font-family: var(--fonte2);
+    color: var(--cor5);
 }
