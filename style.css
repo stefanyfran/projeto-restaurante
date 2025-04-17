@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --cor1: #8B2E2E;
+    --cor2: #F8F1E7;
+    --cor3: #6B8E23;
+    --cor4: #5C4033;
+    --cor5: #2C2C2C;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 60vh;
+    background-color: var(--cor2);
+    background-image: url(imagens/header-medio.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: Cinzel, serif;
+    color: #2C2C2C;
+    text-align: center;
+    padding: 50px;font-size: 4em;
+}
+
+nav {
+    max-width: 2000px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.cardapio {
+    font-family: Nunito, sans-serif;
+    background-color: var(--cor3);
+    color: var(--cor2);
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+}
+
+.cardapio:hover, .reserva:hover {
+    text-decoration: underline;
+}
+
+.reserva {
+    font-family: Nunito, sans-serif;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+}
+
+section.sobre {
+    background-color: var(--cor2);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+
+div#imagem {
+    background-color: var(--cor2);
+    background-image: url(imagens/sobre-nos.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35rem;
+    height: 25rem;
+    margin: 2rem 2rem 2rem 5rem;
+}
+
+div#texto {
+    width: 35rem;
+    height: 25rem;
+    text-align: justify;
+    padding-top: 2.5rem;
+    vertical-align: middle;
+}
+
+h2 {
+    font-family: Josefin Sans, sans-serif;
+    font-weight: normal;
+    font-size: 2.3em;
+    color: var(--cor1);
+    padding: 1rem;
+}
+
+div.sobre > p {
+    font-family: Nunito, sans-serif;
+    padding: 0.5rem;
+    font-size: 1.2em;
+    color: var(--cor5);
+}
+
+p.destaque {
+    font-family: Josefin Sans, sans-serif;
+
+}
+
+button {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--cor1);
+    font-family: Nunito, sans-serif;
+    color: var(--cor2);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button:hover {
+    text-decoration: underline;
+}
