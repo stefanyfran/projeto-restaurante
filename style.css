@@ -179,10 +179,19 @@ img.ramo {
 }
 
 section.sabores {
-    background-color: var(--cor4);
+    background-color: #BC8A52;
 }
 
 section.sabores > h2 {
     font-family: var(--fonte2);
     color: var(--cor5);
+    text-align: center;
+}
+
+ul.sabores {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    font-family: var(--fonte3);
 }
