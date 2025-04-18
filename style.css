@@ -132,7 +132,12 @@ section.sobre {
     background-color: var(--cor2);
     display: flex;
     flex-direction: row;
-    gap: 1rem;  
+    gap: 1rem;
+    height: 60vh;
+}
+
+h2.sobre {
+    text-align: center;
 }
 
 div#imagem {
@@ -141,17 +146,16 @@ div#imagem {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 45vw;
-    height: 60vh;
+    width: 40vw;
+    height: 50vh;
     margin: 2rem 2rem 2rem 2rem;
 }
 
 div#texto {
-    width: 45vw;
-    height: 60vh;
+    width: 50vw;
+    height: 50vh;
     text-align: justify;
     padding-top: 1rem;
-    vertical-align: middle;
 }
 
 h2 {
