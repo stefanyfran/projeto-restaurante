@@ -26,9 +26,11 @@ header {
     position: fixed;
 }
 
-img.logo{
-    width: 4rem;
-    padding: 0rem 2rem;
+a.logo {
+    font-family: var(--fonte1);
+    font-size: 1.5em;
+    color: var(--cor1);
+    padding: 1.2rem;
 }
 
 nav.menu {
@@ -38,7 +40,7 @@ nav.menu {
     justify-content: center;
 }
 
-nav.menu > a {
+nav.menu > a.menu {
     color: var(--cor1);
     font-family: var(--fonte3);
     font-weight: bold;
@@ -46,7 +48,7 @@ nav.menu > a {
     padding: 1.2rem;
 }
 
-nav.menu > a:hover {
+nav.menu > a.menu:hover {
     text-decoration: underline;
     color: var(--cor1dark);
 }
@@ -128,13 +130,12 @@ section.sobre {
     background-color: var(--cor2);
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    
+    gap: 1rem;  
 }
 
 div#imagem {
     background-color: var(--cor2);
-    background-image: url(imagens/sobre-nos.jpg);
+    background-image: url(imagens/sobre-nos.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,19 +180,51 @@ img.ramo {
 }
 
 section.sabores {
+    height: 70vh;
     background-color: #BC8A52;
 }
 
 section.sabores > h2 {
     font-family: var(--fonte2);
+    font-size: 3em;
     color: var(--cor5);
     text-align: center;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
 }
 
 ul.sabores {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
     font-family: var(--fonte3);
+    padding: 1.5rem;
+}
+
+figure > img {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+figcaption {
+    font-family: var(--fonte3);
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--cor5);
+    padding-bottom: 2rem;
+}
+
+button.cardapio {
+    display: block;
+    margin: auto;
+    background-color: var(--cor1);
+    font-family: var(--fonte3);
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+}
+
+button.cardapio:hover {
+    background-color: var(--cor1dark);
 }
