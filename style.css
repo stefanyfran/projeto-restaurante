@@ -3,13 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --cor1: #8B2E2E;
-    --cor1dark: #551c1c;
-    --cor2: #F8F1E7;
-    --cor3: #6B8E23;
-    --cor3dark: #445a17;
-    --cor4: #5C4033;
-    --cor5: #2C2C2C;
+    --vermelho: #8B2E2E;
+    --vermelhodark: #551c1c;
+    --branco: #F8F1E7;
+    --verde: #6B8E23;
+    --verdedark: #445a17;
+    --marrom: #5C4033;
+    --preto: #2C2C2C;
+    --dourado: #BC8A52;
     --fonte1: Cinzel, serif;
     --fonte2: Cormorant Garamond, serif;
     --fonte3: Nunito, serif;
@@ -19,46 +20,14 @@
     padding: 0px;
 }
 
+body {
+    font-family: var(--fonte3);
+}
+
 header {
     width: 100%;
-    height: 10vh;
-    background-color: var(--cor2);
-    position: fixed;
-}
-
-a.logo {
-    font-family: var(--fonte1);
-    font-size: 1.5em;
-    text-decoration: underline;
-    color: var(--cor1);
-    padding: 1.2rem;
-    
-}
-
-nav.menu {
-    max-width: 2000px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-nav.menu > a.menu {
-    color: var(--cor1);
-    font-family: var(--fonte3);
-    font-weight: bold;
-    font-size: 1.2em;
-    padding: 1.2rem;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.178);
-}
-
-nav.menu > a.menu:hover {
-    text-decoration: underline;
-    color: var(--cor1dark);
-}
-
-section.hero {
-    height: 70vh;
-    background-color: var(--cor2);
+    height: 80vh;
+    background-color: var(--branco);
     background-image: url(imagens/header-home.png);
     background-position: center center;
     background-size: cover;
@@ -66,172 +35,84 @@ section.hero {
     background-attachment: fixed;
 }
 
-h1 {
-    font-family: var(--fonte2);
-    font-weight: normal;
-    color: var(--cor2);
-    text-align: center;
-    padding: 9rem 3rem 3rem 3rem;
-    font-size: 4em;
-    
+.cabecalho {
+    background-color: var(--branco);
+    /*position: fixed;*/
+    width: 100%;
 }
 
-nav.hero {
-    max-width: 2000px;
-    margin: auto;
-    padding: 1rem 10rem;
-
+.cabecalho-logo {
+    font-family: var(--fonte1);
+    font-size: 1.8rem;
+    color: var(--vermelhodark);
+    padding: 1.2rem;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.185);
 }
 
-ul {
+.cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
     list-style: none;
 }
 
-a {
-    color: var(--cor2);
+.cabecalho-menu-item {
+    padding: 1.2rem;
     text-decoration: none;
+    color: var(--vermelho);
+    font-weight: ;
+    font-size: 1rem;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.178);
 }
 
-ul.hero {
+.cabecalho-menu-item:hover {
+    text-decoration: underline;
+    color: var(--vermelhodark);
+}
+
+.hero {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
 }
 
-.cardapio {
-    font-family: var(--fonte3);
-    background-color: var(--cor3);
-    color: var(--cor2);
-    padding: 0.8rem;
-    border-radius: 0.6rem;
-    font-weight: bold;
-}
-
-.cardapio:hover {
-    background-color: var(--cor3dark);
-}
-
-.reserva {
-    font-family: var(--fonte3);
-    background-color: var(--cor1);
-    color: var(--cor2);
-    padding: 0.8rem;
-    border-radius: 0.6rem;
-    font-weight: bold;
-}
-
-.reserva:hover {
-    background-color: var(--cor1dark);
-}
-
-section.sobre {
-    background-color: var(--cor2);
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    height: 60vh;
-}
-
-h2.sobre {
+.hero-titulo {
+    font-family: var(--fonte2);
+    font-weight: normal;
+    color: var(--branco);
+    font-size: 3.5rem;
+    padding: 1rem;
     text-align: center;
 }
 
-div#imagem {
-    background-color: var(--cor2);
-    background-image: url(imagens/sobre-nos.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 40vw;
-    height: 50vh;
-    margin: 2rem 2rem 2rem 2rem;
-}
-
-div#texto {
-    width: 50vw;
-    height: 50vh;
-    text-align: justify;
-    padding-top: 1rem;
-}
-
-h2 {
-    font-family: var(--fonte2);
-    font-size: 2.3em;
-    color: var(--cor1);
-    padding: 1rem;
-}
-
-div.sobre > p {
-    font-family: var(--fonte3);
-    padding: 0.5rem;
-    font-size: 1.2em;
-    color: var(--cor5);
-    line-height: 1em;
-}
-
-div.sobre > p.destaque {
-    font-family: var(--fonte2);
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-img.ramo {
-    display: block;
-    margin: auto;
-}
-
-section.sabores {
-    height: 70vh;
-    background-color: #BC8A52;
-}
-
-section.sabores > h2 {
-    font-family: var(--fonte2);
-    font-size: 3em;
-    color: var(--cor5);
-    text-align: center;
-    padding: 3rem 1.5rem 1.5rem 1.5rem;
-}
-
-ul.sabores {
+.hero-botoes {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    justify-content: center;
-    font-family: var(--fonte3);
-    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    margin: 3rem;
 }
 
-figure > img {
-    display: block;
-    margin: auto;
+.hero-botoes-cardapio {
+    background-color: var(--vermelho);
+    color: var(--branco);
     padding: 1rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--fonte2);
 }
 
-figcaption {
-    font-family: var(--fonte3);
-    font-weight: bold;
-    font-size: 1.3em;
-    color: var(--cor5);
-    padding-bottom: 2rem;
-}
-
-button.cardapio {
-    display: block;
-    margin: auto;
-    background-color: var(--cor1);
-    font-family: var(--fonte3);
-    font-size: 1.3em;
-    border: none;
-    cursor: pointer;
-}
-
-button.cardapio:hover {
-    background-color: var(--cor1dark);
+.hero-botoes-reserva {
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--fonte2);
 }

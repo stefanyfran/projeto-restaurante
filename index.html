@@ -4,40 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sapori di Casa</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <a href="index.html" class="logo">Sapori di Casa</a>
-            <a href="index.html" class="menu">Home</a>
-            <a href="sobre-nos.html" class="menu">Sobre</a>
-            <a href="cardapio.html" class="menu">Cardápio</a>
-            <a href="contato.html" class="menu">Contato</a>
-        </nav>
+            <section class="cabecalho">
+                <a class="cabecalho-logo" href="index.html">Sapori di Casa</a>
+                <nav>
+                    <ul class="cabecalho-menu">
+                        <li>
+                            <a class="cabecalho-menu-item" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="cabecalho-menu-item" href="sobre-nos.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a class="cabecalho-menu-item" href="cardapio.html">Cardápio</a>
+                        </li>
+                        <li>
+                            <a class="cabecalho-menu-item" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="hero">
+                <h1 class="hero-titulo">Sabores autênticos da Itália</h1>
+                <nav>
+                    <ul class="hero-botoes">
+                        <li>
+                            <a class="hero-botoes-cardapio" href="cardapio.html">Ver Cardápio</a>
+                        </li>
+                        <li>
+                            <a class="hero-botoes-reserva" href="contato.html">Reservar Mesa</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
     </header>
     <main>
-        <section class="hero">
-            <h1>Sabores autênticos da Itália</h1>
-        <nav class="hero">
-            <ul class="hero">
-                <li class="cardapio"><a href="cardapio.html">Ver Cardápio</a></li>
-                <li class="reserva"><a href="contato.html">Reservar Mesa</a></li>
-            </ul>
-        </nav>
-        </section>
         <section class="sobre">
-            <div class="sobre" id="imagem"></div>
-            <div class="sobre" id="texto">
-                <h2 class="sobre">Sobre Sapori di Casa</h2>
-                <p>A verdadeira experiência da culinária italiana. Cada prato é servido com amor, tradição e frecor.</p>
-                <p class="destaque">Aqui, cada receita tem alma e memória.</p>
-                <img src="imagens/ramo.png.png" alt="ramo de azeitona" class="ramo">
+            <div class="sobre-imagem"></div>
+            <div class="sobre-texto">
+                <h2>Sobre Sapori di Casa</h2>
+                <p>A verdadeira experiência da culinária italiana. Nossos pratos são servidos com amor, tradição e frescor. </p>
+                <p>Aqui, cada receita tem alma e memória.</p>
+                <img src="imagens/ramo.png.png" alt="ramo de azeitona">
             </div>
         </section>
-        <section class="sabores">
+        <section class="destaquesCardapio">
             <h2>Nossos Sabores</h2>
-            <ul class="sabores">
+            <ul>
                 <li>
                     <figure>
                         <img src="imagens/talher.png" alt="Ícone talher">
@@ -57,11 +74,15 @@
                     </figure>
                 </li>
             </ul>
-            <a href="cardapio.html"><button class="cardapio">Ver o Cardápio Completo</button></a>
+            <a href="cardapio.html"><button>Ver o Cardápio Completo</button></a>
         </section>
         <section class="reservas">
-
+            <h2>Garanta sua experiência italiana completa</h2>
+            <p>Faça sua reserva para um jantar especial com sabores que aquecem a alma. Atendemos com todo carinho em um ambiente acolhedor.</p>
         </section>
     </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
