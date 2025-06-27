@@ -26,7 +26,7 @@ body {
 
 header {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-color: var(--branco);
     background-image: url(imagens/header-home.png);
     background-position: center center;
@@ -94,7 +94,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     gap: 4rem;
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .hero-botoes-cardapio {
@@ -126,14 +126,50 @@ header {
 }
 
 .sobre {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
     padding: 1rem;
 }
 
 .imagem {
-    width: 45vw;
-    height: 35vh;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 0.5rem;
+}
 
+.sobre-texto {
+    text-align: center;
+}
+
+.sobre-texto-titulo {
+    font-family: var(--fonte2);
+    font-size: 2rem;
+    color: var(--vermelho);
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.sobre-texto-paragrafo {
+    color: var(--preto);
+    font-size: 1.1rem;
+}
+
+.sobre-texto-destaque {
+    color: var(--vermelhodark);
+    font-family: var(--fonte2);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 0.8rem;
+}
+
+.destaquesCardapio {
+    background-color: var(--dourado);
+
+}
+
+.destaquesCardapio-icones {
+    display: flex;
+    justify-content: space-evenly;
+
+    list-style: none;
 }
