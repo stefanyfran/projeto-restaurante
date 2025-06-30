@@ -10,7 +10,7 @@
     --verdedark: #445a17;
     --marrom: #5C4033;
     --preto: #2C2C2C;
-    --dourado: #BC8A52;
+    --dourado: #bc8a52;
     --fonte1: Cinzel, serif;
     --fonte2: Cormorant Garamond, serif;
     --fonte3: Nunito, serif;
@@ -37,7 +37,6 @@ header {
 
 .cabecalho {
     background-color: var(--branco);
-    /*position: fixed;*/
     width: 100%;
 }
 
@@ -126,7 +125,8 @@ header {
 }
 
 .sobre {
-    padding: 1rem;
+    background-color: var(--branco);
+    padding: 3rem;
 }
 
 .imagem {
@@ -163,13 +163,87 @@ header {
 }
 
 .destaquesCardapio {
+    height: 65vh;
     background-color: var(--dourado);
+    text-align: center;
+    padding: 2rem;
+}
 
+.destaquesCardapio-titulo {
+    font-family: var(--fonte2);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--marrom);
+    padding: 2rem;
 }
 
 .destaquesCardapio-icones {
     display: flex;
     justify-content: space-evenly;
-
     list-style: none;
+    padding-bottom: 4rem;
+    font-family: var(--fonte3);
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--marrom);
+    font-weight: 600;
+}
+
+.destaquesCardapio-botao {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-family: var(--fonte3);
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 3rem;
+}
+
+.destaquesCardapio-botao:hover {
+    background-color: var(--vermelhodark);
+}
+
+.reservas {
+    background-color: var(--vermelhodark);
+    color: #EBCD9C;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.reservas-titulo {
+    font-family: var(--fonte2);
+    font-size: 2.5rem;
+}
+
+.reservas-texto {
+    font-size: 1.1rem;
+    padding: 2rem;
+}
+
+.reservas-botao {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding: 1rem 0rem 2rem 0rem;
+}
+
+.reservas-botao-whatsapp {
+    background-color: #EBCD9C;
+    font-family: var(--fonte3);
+    font-size: 1.5rem;
+    color: var(--vermelhodark);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.reservas-botao-formulario {
+    background-color: #EBCD9C;
+    font-family: var(--fonte3);
+    font-size: 1.5rem;
+    color: var(--vermelhodark);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1rem;
 }
